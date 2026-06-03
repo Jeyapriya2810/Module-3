@@ -1,27 +1,31 @@
-# Regex in Python: Filter Words Without the Letter 'e'
+# Module-3
+# 🧹 Strings-Remove Nth Index Character from a String
 
 ## 🎯 Aim
-To write a Python program that filters out and returns all elements from a list **that do not contain the letter `'e'`**, using **regular expressions (regex)**.
+To write a Python program that accepts a string and removes the character at a specified index.
 
 ## 🧠 Algorithm
-1. Import the `re` module.
-2. Initialize an empty list `l1` to store results.
-3. Define a list of words:  
-   `items = ['goal', 'new', 'user', 'sit', 'eat', 'dinner']`
-4. Iterate through each word in the list:
-   - Use `re.search(r"e", i)` to check if the word contains `'e'`.
-   - If **not**, append the word to `l1`.
-5. Print the final filtered list.
+1. Define a function named `remove` that takes the input string as an argument.
+2. Read the index `n` from the user input.
+3. Initialize an empty string `a` to store the new string.
+4. Iterate over each index of the string using a `for` loop.
+5. Check if the current index `i` is not equal to `n`.
+6. If `i != n`, append the character at index `i` to string `a`.
+7. After the loop, return the modified string `a`.
+8. Print the final result.
 
-## 🧾 Program
+## 💻 Program
 ```
-items=[153,147,124,102]
-print(sum(items))
+n=int(input())
+def remove(a):
+    for i in range(0,len(a)):
+        if(i!=n):
+            print(a[i],end='')
 ```
 
 ## Output
 
-<img width="527" height="178" alt="517996877-83789f2b-6760-48e1-b547-cddb8d564e94" src="https://github.com/user-attachments/assets/a0436fef-1ff5-47d2-b326-83a52f1be69f" />
+<img width="634" height="189" alt="517997318-cbe6600e-5369-48f2-9661-c074abaad1cd" src="https://github.com/user-attachments/assets/b929612a-3ebd-46d7-826b-a0b61add6fc1" />
 
 ## Result
 Thus the program executed successfully.
